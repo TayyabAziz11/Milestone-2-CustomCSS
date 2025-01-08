@@ -232,6 +232,24 @@ body {
   resize: vertical;
 }
 
+.about-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.about-section img {
+  max-width: 100%; 
+  height: auto; 
+  border-radius: 10px; 
+}
+
+.about-section .content {
+  flex: 1;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero-content {
@@ -240,6 +258,17 @@ body {
   }
 
   .hero-image {
+    display: none;
+  }
+  
+  .section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    width: 10px;
+    margin-bottom: 20px; 
     display: none;
   }
 
